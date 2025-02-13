@@ -69,14 +69,16 @@ GROUP BY
     GetMonthForWeek(Year([smpDate]), DatePart("ww", [smpDate], 0)), 
     DatePart("ww", [smpDate], 0);
 
-📌 Parameters:
-Parameter	Description
-targetYear	The year of the calculation (default range: 1900-2100)
-targetWeek	The ISO week number (1-53)
-startDayOfWeek	First day of the week: 1 = Sunday, 2 = Monday (default = 2)
-smpDate	The date field used in the SQL query
-smpValue1	Aggregated value field 1
-smpValue2	Aggregated value field 2
+## 📌 Parameters
+
+| Parameter       | Description |
+|----------------|-------------|
+| `targetYear`   | The year of the calculation (default range: **1900-2100**) |
+| `targetWeek`   | The ISO week number (**1-53**) |
+| `startDayOfWeek` | First day of the week: **`1 = Sunday, 2 = Monday`** (default = **2**) |
+| `smpDate`      | The **date field** used in the SQL query |
+| `smpValue1`    | **Aggregated value field 1** |
+| `smpValue2`    | **Aggregated value field 2** |
 
 📌 Example Usage
 
