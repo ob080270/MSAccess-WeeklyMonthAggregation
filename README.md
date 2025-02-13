@@ -79,17 +79,13 @@ smpValue1	Aggregated value field 1
 smpValue2	Aggregated value field 2
 
 📌 Example Usage
-1️⃣ Calling the Function in VBA
-vba
-Копировать
-Редактировать
+
+1️⃣ Calling the Function in VBA:
 Dim result As Integer
 result = GetMonthForWeek(2024, 5) ' Returns 2 (February)
 MsgBox "The dominant month is: " & result
-2️⃣ Using in an MS Access SQL Query
-sql
-Копировать
-Редактировать
+
+2️⃣ Using in an MS Access SQL Query:
 SELECT smpYear, smpMonth, smpWeek, smpSumA, smpSumB
 FROM qAggregatedWeeks
 ORDER BY smpYear DESC, smpWeek ASC;
